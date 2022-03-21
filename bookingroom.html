@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bking" style="width: 100%; height:auto; background-color: rgb(112, 102, 102); border-radius: 10px;">
+        <form action="/bookin">
+       <h1>Where to</h1>
+       
+       <div class="in-div" style="color: black; background-color: gray; padding: 10px 40px; width: 15%;">
+        <p>chose a room</p>
+            <input list="browsers" name="roomtype" style="width: auto; width: 80%;">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+          </div>
+          <div class="in-div" style="color: black; background-color: gray; padding: 10px 10px; width: 20%;">
+                <label for="birthdaytime">Check in:</label>
+                <input type="datetime-local" style="width: 100%;" id="checkintime" name="checkin">     
+            
+          </div>
+          <div class="in-div" style="color: black; background-color: gray; padding: 10px 10px; width: 20%; margin-left: 0%;">
+            <label for="birthdaytime">Check out:</label>
+                <input type="datetime-local" style="width: 100%;" id="checkintime" name="checkout">
+        </div>
+        <div class="in-div" style="color: black; background-color: gray; padding: 10px 20px; width: 40%;">
+            <p>Guest</p>
+            <label for="quantity">No of Room:</label>
+            <input type="number" id="quantity" name="roomqty" min="1" max="100">
+            <label for="quantity">Adult 18+:</label>
+            <input type="number" id="quantity" name="aqty" min="1" max="100">
+            <label for="quantity">under 18:</label>
+            <input type="number" id="quantity" name="dqty" min="1" max="100">
+        </div>
+        <br><br>
+        <div class="in-div" style="color: black; background-color: gray; padding: 5px 5px; float: right;">
+            <button type="submit" style="font-size: 20; margin-right: 0%;">Submit</button>
+        </div>
+        
+        </form>
+          
+    </div>
+
+
+    <div class="animationCont">
+        
+
+        <img class="mySlides" src="https://www.princehotels.com/wp-content/uploads/2019/04/aboutslider3-1.jpg" style="width:100%" height="100%">
+        <img class="mySlides" src="https://media-cdn.tripadvisor.com/media/photo-s/13/bd/c2/8d/england-match.jpg" style="width:100%" height="100%">
+        <img class="mySlides" src="http://1.bp.blogspot.com/-4Eu0zTuFgkA/UNTI2O6rUhI/AAAAAAAAFbU/TZUfO3OUm7c/s1600/IMG_1741.JPG" style="width:100%" height="100%">
+      
+      </div>
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 20000); // Change image every 5 seconds
+      }
+      </script>
+    <script>
+        const d = new Date();
+        document.getElementById("timeandday").innerHTML=d;
+
+    </script>
+</body>
+</html>

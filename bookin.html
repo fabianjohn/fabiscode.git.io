@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bookingReg" style="background-color: grey; width: 80%; height: auto; margin-top: 20px; position: absolute;">
+        <form action="">
+            <h1>BOOKING</h1>
+            <div style="float: right;">
+                <table>
+                    <tr>
+                        <th>RoomNo</th>
+                        <th>NoOfDay</th>
+                        <th>Amount($)</th>
+                    </tr>
+                    <tr>
+                        <th th:${noofroom}></th>
+                        <th th:${noofday}></th>
+                        <th th:${amount}><span></span></th>
+                    </tr>
+                </table><br>
+            </div><br><br>
+            <div>
+                <h2 style="float: left;">Customer Details</h2><br><br><br>
+           Fist Name <input id="ct" type="text" name="fname">
+           Middle Name <input id="ct" type="text" name="mname">
+           Sur Name <input id="ct" type="text" name="sname">
+            </div><br><br>
+
+        <div>
+           Country<input id="ct" type="text" name="contry">
+           City/Town<input id="ct" type="text" name="city">
+           ZipCode<input id="ct" type="text" name="zipcode">
+        </div> <br>
+        <div style="float: left;">
+           Contact Number <input id="ct" type="text" name="ccontact">
+           Address <input id="ct" type="text" name="caddress">
+
+        </div><br><br>
+        <div>
+            <h2 style="float: left;">Next Of King</h2><br><br><br>
+       Fist Name <input id="ct" type="text" name="nextfname">
+       Middle Name <input id="ct" type="text" name="nextmname">
+       Sur Name <input id="ct" type="text" name="nextsname">
+        </div><br> 
+        <div style="float: left;">
+           Contact Number <input id="ct" type="text" name="nextcontact">
+           Address <input id="ct" type="text" name="nextaddress">
+
+        </div>
+        <div >
+            <button type="submit" style="float: right; height: 30px; background-color: rgb(160, 158, 161); color: white;" >submit</button>
+        </div>
+
+        </form>
+
+    </div>
+</body>
+</html>
